@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio2</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      src="https://kit.fontawesome.com/cecc1006cb.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+  </head>
+  
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logoML.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+        <div class="header-text">
+          <p>Frontend Developer</p>
+          <h1>
+            Hi, My name is<br /><span>M</span>aksim <span>L</span>evanovich
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!----------------- about---------------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/left-blury-photo.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title"><span>A</span>bout Me</h1>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam
+              vitae obcaecati numquam odio, minus earum modi ipsum consequuntur,
+              delectus dolore quo doloribus officiis voluptatum pariatur
+              reiciendis saepe amet laborum sunt?
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span> <br />Designing Web Interfaces</li>
+                <li><span>Web Development</span><br />Web app Development</li>
+                <li>
+                  <span>App Development</span><br />Building Android/iOS apps
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>2021 - Current</span><br />UI/UX Design</li>
+                <li><span>2017-2019</span><br />Web app Development</li>
+                <li>
+                  <span>2016 - 2017 </span><br />Building Android/iOS apps
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2016</span> <br />Designing Web Interfaces</li>
+                <li><span>2016</span><br />Web app Development</li>
+                <li><span>2014</span><br />Building Android/iOS apps</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!------------ Services------ -->
+
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              My design websites like cozy homes—intuitive navigation, clear labels, and comfy chairs for visitors. Ordinary folks find solace in my digital abode. 
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              As an UI/UX designer, I seamlessly blend creativity and functionality, crafting digital experiences that resonate with users. My intuitive designs guide users through interfaces, making interactions delightful and effortless. My attention to detail ensures pixel-perfect layouts, while your empathy for users results in memorable journeys.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>Service of websites</h2>
+            <p>
+              When glitches arise, I'm the go-to problem-solver. I dive into the code, dissecting it like a detective. I keen eye spots errors, whether they’re syntax hiccups, database quirks, or compatibility issues. I untangle the knots, ensuring smooth functionality.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!------------------- Portfolio----------------- -->
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/Beauty salon.png" />
+            <div class="layer">
+              <h3>Beauty Salon Web Page</h3>
+              <p>
+                The Beauty Salon web page created by me. Click on icon to check
+                it.
+              </p>
+              <a href="https://iramakeupartist.com/" target="_blank"
+                ><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/fitness center.png" />
+            <div class="layer">
+              <h3>Fitness-Center Web Page</h3>
+              <p>Welcome to my Fitness-Center Web Page</p>
+              <a
+                href="https://maxlevus.github.io/Fitness-Center/"
+                target="_blank"
+                ><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/Trip.png" />
+            
+            <div class="layer">
+              <h3>Trip Web Page</h3>
+              <p>Welcome to my Trip Web Page</p>
+              <a
+                href="https://maxlevus.github.io/Trip-Web-Page/"
+                target="_blank"
+                ><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+
+    <!---------------- Contact---------------->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>maxlevanovich@gmail.com
+            </p>
+            <p><i class="fa-solid fa-square-phone"></i>+1 (612) 978 7176</p>
+            <div class="social-icons">
+              <a href="https://facebook.com"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://facebook.com"
+                ><i class="fa-brands fa-twitter-square"></i
+              ></a>
+              <a href="https://facebook.com"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://facebook.com"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+            <a
+              href="images/Maksim Levanovich resume.docx"
+              download
+              class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input
+                type="text"
+                name="Name"
+                id="name"
+                placeholder="Your Name"
+                required
+              />
+              <input
+                type="email"
+                name="Email"
+                id="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                id="message"
+                placeholder="Your Message"
+                required
+              ></textarea>
+              <button type="submit" class="btn btn2" onclick="sendMail()">
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>
+          Copyright <span><i class="fa-solid fa-copyright"></i></span> Maksim
+          Levanovich.
+        </p>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
